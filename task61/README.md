@@ -12,3 +12,6 @@ $ source prepare_task.sh <путь до новой папки>
 ```bash
 $ source task.sh <путь до новой папки> $(date -Ins)
 ```
+
+## Пример
+![](image.png)

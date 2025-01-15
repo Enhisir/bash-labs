@@ -34,7 +34,7 @@ for LINE in "${READ_LINES[@]}"; do
  sleep 0.5
  read -t 0.5 -r USER_INPUT # Проверка ввода "quit"
  USER_INPUT=$(echo "$USER_INPUT" | awk '{print $1}')
- if [[ "$USER_INPUT" == "quit" ]]; then
+ if [ "$USER_INPUT" = "quit" ]; then
   echo "Выхожу..."
   [ -f "$OUTPUT_FILE" ] && rm "$OUTPUT_FILE"
   exit 0

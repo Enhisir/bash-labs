@@ -15,5 +15,5 @@ fi
 
 DELIM=$(date -Ins -d "$2 - 1 day")
 echo "$DELIM"
-find "$1" ! -type d ! -newermt "$DELIM" -delete -printf "Удаляю файл %p\n..."
-find "$1" ! -type d -exec touch -mad "$DELIM" {} \; -printf "Изменяю дату модификации файла %p\n..."
+find "$1" ! -type d ! -newermt "$DELIM" -delete -printf "Удаляю файл %p...\n"
+find "$1" ! -type d -exec touch -mad "$DELIM" {} \; -printf "Изменяю дату модификации файла %p...\n"
